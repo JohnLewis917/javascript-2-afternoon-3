@@ -150,7 +150,7 @@ uniq(names, function(uniqArr){
 //Code Here 
 function each(arr, cb){
   for(let i = 0; i < arr.length; i++){
-    
+    cb(arr[i], i)
   }
 }
 // Do not edit the code below.
@@ -169,7 +169,14 @@ each(names, function(item, indice){
 */
 
 // Code here
-
+let Id = x;
+function getUserById(arr, Id, cb){
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] === Id){
+      cb(arr[key])
+    }
+  }
+}
 // Do not edit the code below.
 var users = [
   {
