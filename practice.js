@@ -171,10 +171,11 @@ each(names, function(item, indice){
 
 // Code here
 let Id = x;
-function getUserById(arr, Id, cb){
+function getUserById(arr, id, cb){
+  console.log(arr)
   for(let i = 0; i < arr.length; i++){
-    if(arr[i] === Id){
-      cb(arr[key])
+    if(arr[i].id === id){
+      cb(arr[i])
     }
   }
 }
